@@ -1,0 +1,148 @@
+#include<iostream>
+using namespace std;
+struct node
+{
+	double c;
+	int e;
+	node*next;
+};
+int main()
+{
+	node*a,*b,*p,*q,*f,*g;
+	a=(node*)malloc(sizeof(node));
+	a->next=NULL;
+	b=(node*)malloc(sizeof(node));
+	b->next=NULL;
+	int n1,n2,i,j;
+	cin>>n1;
+	for(i=0,q=a;i<n1;i++)
+	{
+		p=(node*)malloc(sizeof(node));
+		q->next=p;
+		p->next=NULL;
+		q=p;
+		cin>>p->c>>p->e;
+	}
+	int n2z;
+	cin>>n2;
+	n2z=n2;
+	for(i=0,q=b;i<n2;i++)
+	{
+		p=(node*)malloc(sizeof(node));
+		q->next=p;
+		p->next=NULL;
+		q=p;
+		cin>>p->c>>p->e;
+	}
+	cin.get();
+	char k;
+	cin>>k;
+	if(k=='+')
+	{
+		if(a->next==NULL)
+		{
+			a=b;
+			n1=n2;
+		}
+		else
+		{
+			for(i=0,p=b->next;i<n2z;i++)
+			{
+				for(g=a,q=a->next;q!=NULL&&q->e>p->e;)
+				{
+					g=q;
+					q=q->next;
+				}
+				if(q==NULL)
+				{
+					g->next=p;
+					n1=n1+n2;
+					break;
+				}
+				else{
+					if(q->e<p->e)
+					{
+						f=(node*)malloc(sizeof(node));
+						f->c=p->c;
+						f->e=p->e;
+						g->next=f;
+						f->next=q;
+						n1++;
+					}
+					else{
+						if(q->e==p->e)
+							q->c=q->c+p->c;
+						if(q->c==0)
+						{
+							g->next=q->next;
+							free(q);
+							n1--;
+						}
+					}
+				}
+				p=p->next;
+				n2--;
+			}
+		}
+	}
+	else
+	{
+		for(i=0,q=b->next;b!=NULL;i++)
+			b->c=-b->c;
+
+		if(a->next==NULL)
+			a=b;
+		else
+		{
+			for(i=0,p=b->next;i<n2z;i++)
+			{
+				for(g=a,q=a->next;q!=NULL&&q->e>p->e;)
+				{
+					g=q;
+					q=q->next;
+				}
+				if(q==NULL)
+				{
+					q=p;
+					n1=n1+n2;
+					break;
+				}
+				else{
+					if(q->e<p->e)
+					{
+						f=(node*)malloc(sizeof(node));
+						f->c=p->c;
+						f->e=p->e;
+						g->next=f;
+						f->next=q;
+						n1++;
+					}
+					else{
+						if(q->e==p->e)
+							q->c=q->c+p->c;
+						if(q->c==0)
+						{
+							g->next=q->next;
+							free(q);
+							n1--;
+						}
+					}
+				}
+				p=p->next;
+				n2--;
+			}
+		}
+	}
+	cout<<"½á¹û£º";
+	for(i=0,q=a->next;i<n1;i++)
+	{
+		cout<<q->c<<"X^"<<q->e<<"+";
+		q=q->next;
+	}
+	cout<<endl;
+	system("pause");
+	return 0;
+}
+
+
+

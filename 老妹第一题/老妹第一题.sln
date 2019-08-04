@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "老妹第一题", "老妹第一题.vcxproj", "{B7375428-21A1-4DAB-8992-AA5678F439AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7375428-21A1-4DAB-8992-AA5678F439AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7375428-21A1-4DAB-8992-AA5678F439AE}.Debug|Win32.Build.0 = Debug|Win32
+		{B7375428-21A1-4DAB-8992-AA5678F439AE}.Release|Win32.ActiveCfg = Release|Win32
+		{B7375428-21A1-4DAB-8992-AA5678F439AE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

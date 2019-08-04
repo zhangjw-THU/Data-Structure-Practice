@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "约瑟夫环", "约瑟夫环.vcxproj", "{EACBA250-AC5F-4D4E-8C1D-4EEDA5B17E33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EACBA250-AC5F-4D4E-8C1D-4EEDA5B17E33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EACBA250-AC5F-4D4E-8C1D-4EEDA5B17E33}.Debug|Win32.Build.0 = Debug|Win32
+		{EACBA250-AC5F-4D4E-8C1D-4EEDA5B17E33}.Release|Win32.ActiveCfg = Release|Win32
+		{EACBA250-AC5F-4D4E-8C1D-4EEDA5B17E33}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
